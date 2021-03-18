@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#grilla {
+  display: grid;
+  grid-template-areas: "header"
+ "header"
+ "header"
+ "header"
+ "publicidad"
+ "footer";
+  grid-template-rows: 50% 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 0; }
+
+header {
+  grid-area: header;
+  background: url(../img/portada.jpg);
+  background-size: cover;
+  top: 0; }
+
+header#portada_categorias {
+  background: url(../img/portada2.jpg);
+  height: 400px;
+  background-size: cover; }
+
+div#carrusel {
+  grid-area: publicidad;
+  float: left;
+  margin-left: 300px;
+  width: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#carrusel .left-arrow {
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+  top: 50%;
+  margin-top: -9px; }
+
+#carrusel .left-arrow {
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+  top: 50%;
+  margin-top: -9px; }
+
+.carrusel {
+  display: flex;
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  z-index: 0; }
+
+.carrusel > div {
+  float: left;
+  height: 203px;
+  margin-right: 5px;
+  width: 195px;
+  text-align: center; }
+
+.carrusel img {
+  cursor: pointer; }
+
+footer {
+  grid-area: footer; }
+  footer section {
+    background-color: #f7bd00;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-between;
+    padding: 15px; }
+    footer section ul li {
+      list-style: none; }
+
+.box1 h1 {
+  margin-top: 10px;
+  background-color: black;
+  width: 700px;
+  margin-left: 300px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: #f7bd00;
+  font-family: 'Anton', sans-serif; }
+
+.box3 {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  position: relative;
+  left: 900px;
+  top: -60px; }
+
+#grillac {
+  display: grid;
+  grid-template-areas: 
+ "header header header"
+ "filtro items items"
+ "filtro items items"
+ "filtro items items"
+ "footer footer footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20% auto 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 0; }
+
+section div#filtro {
+  grid-area: filtro;
+  padding: 10px;
+  font-size: 20px; }
+
+section div#items {
+  display: grid;
+  grid-area: items;
+  padding: 30px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  }
+
+.containerp {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px; }
+
+div .categorias {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+section#publicidad{
+  padding-left: 400px;
+}
